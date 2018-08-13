@@ -1,3 +1,20 @@
+---------------- Local Reposirory----------------------------------------------
+1. Go to the project folder and issue below command to create the repository
+	$ git init
+	
+2. Create .gitignore file with below contents
+	target/
+	bin/
+	.DS_Store*
+	*.class
+
+3. Then add files to the project - the java files etc and add them to teh repository
+	- Better to do it from Eclipse as we can add only the needed files
+	- If doing from command like below will add all files
+		$ git add .
+		$ git commit -m "message"	
+		
+----------------------Link to Remote Repository------------------------------------		
 1. Create repository in github account
 	- Get the repository URL : git@github.com:MyLifeIsJava/Maventest.git
 
@@ -6,6 +23,14 @@ $ git init
 $ git remote add origin <Above url : replace "github.com" with "kiransringeri">
 $ git config user.email "kiransringeri@gmail.com"
 $ git config user.name "kiransringeri"
+
+3. Create .gitignore file with below contents
+target/
+bin/
+.DS_Store*
+*.class
+
+4. 
 $ git add .
 $ git commit -m <commit message>
 $ git push origin master 
