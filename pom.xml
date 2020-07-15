@@ -16,7 +16,7 @@
 		<maven.checkstyle.version>3.0.0</maven.checkstyle.version>
 		<!-- <puppycrawl.checkstyle.version>8.11</puppycrawl.checkstyle.version> -->
 	</properties>
-
+	<!-- test comment -->
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
