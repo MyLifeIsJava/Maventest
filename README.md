@@ -58,7 +58,6 @@ We need the below users in Janrain
 ---
 <details>
   <summary>Data migration</summary>
-	
 ### Data migration ###
 * Records with resourceType="person"
 	* Add ```profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}```
@@ -97,11 +96,12 @@ We need the below users in Janrain
 * The properties which we have defined as booean is RAML (E.g: isActive) accepts the quoted string "true", "false". But Couchbase doesn't treat these as boolean. Even having "enum [true, false]" didn't solve this problem.
 * The JS SDK used by the hybrid applications has a method which will encode the filter parameters before invoking Newton APIs. In order to handle this scenario, Newton will attempt to decode the filters if present. The percentage symbol is used in like and not like filter criteria so make sure %25 is used instead. 
 * Currently Newton NXT works only with Mulesoft 4.2.1 runtime. It fails to get deployed in 4.2.2 and higher versions.
+
 ----
+
 ### Things to do when migrated to mule runtime 4.3 ###
 * In commons-action.xml we are retring the chained action groovy script execution max 5 times. Use variable instead and override the value from action record. An action can set the maxretryCount to 0, 1, 2, 3, 4 or 5. 0 means no retry.
 
 
 
  
-
