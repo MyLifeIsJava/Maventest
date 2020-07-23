@@ -58,6 +58,7 @@ We need the below users in Janrain
 ---
 <details>
   <summary>Data migration</summary>
+	
 ### Data migration ###
 * Records with resourceType="person"
 	* Add ```profile: {id: "JANRAIN/PING", profile: "Janrain/Ping uuid"}```
